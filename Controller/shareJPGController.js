@@ -25,7 +25,7 @@ export const shareJPG = (req, res) => {
     }
 
     // Send back the file path
-    const fileUrl = `http://${req.get("host")}/uploads/${fileName}`;
+    const fileUrl = `https://${req.get("host")}/uploads/${fileName}`;
     res.json({ filePath: fileUrl });
   });
 };
