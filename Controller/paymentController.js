@@ -14,8 +14,7 @@ export const createOrder = async (req, res) => {
   const totalAmount = Math.floor(treeCount * 110);
 
   const options = {
-    // amount: totalAmount * 100, // amount in smallest currency unit
-    amount: 1 * 100,
+    amount: totalAmount * 100, // amount in smallest currency unit
     currency: "INR",
   };
 
